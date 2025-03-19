@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial','Helvetica','sans-serif';
+}
+body{
+	background-color: #252b42;
+	color: #fdfdfd;
+}
+main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px auto;
+	padding: 80px;
+	width: 80%;
+	flex-wrap: wrap;
+}
+.text-content{
+	width: 25%;
+}
+.top-content{
+	font-size: 1.2em;
+	color: #21affe;
+	margin-bottom: 30px;
+}
+.heading{
+	font-size: 3.5em;
+	margin-top: 20px;
+	line-height: 1.3;
+}
+.content{
+	margin-top: 20px;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+.selected{
+	margin-top:28px;
+	height: 45px;
+	margin-right: 8px;
+	width: 45%;
+	font-size: 0.8em;
+	color: #eaf6fd;
+	background-color: #23a6f0;
+	border: none;
+	border-radius: 5px;
+}
+.deselected{
+	margin-top:28px;
+	height: 45px;
+	width: 45%;
+	font-size: 0.8em;
+	color: #22a0e8;
+	border: 0.5px solid #23a6f0;
+	border-radius: 5px;
+	background-color: #252b42;
+}
+.selected a{
+	text-decoration: none;
+	color: #eaf6fd;
+}
+.deselected a{
+	text-decoration: none;
+	color: #22a0e8;
+}
+aside{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	position: relative;
+    margin-top: 100px;
+}
+.container{
+	position: relative;
+}
+.circle{
+	z-index: 1;
+	background-color: #aaead0;
+	border-radius: 50%;
+	height: 320px;
+	width: 320px;
+	position: absolute;
+	overflow: hidden;
+	transform: translate(-45%, -65%);
+}
+.boy{
+	z-index: 2;
+	position: absolute;
+	height: auto;
+	width: 500px;
+	bottom: 0;
+	object-fit: cover;
+	transform: translate(-50%, 35%);
+}
+.trading-chart{
+	z-index: 3;
+	position: absolute;
+    width: 200px;
+	left: -280px;
+	top: -280px; 
+}
+.score{
+	z-index: 3;
+	position: absolute;
+	width: 250px;
+	left: -280px;
+    bottom: -170px;
+    border-radius: 6px;
+}
+.rep-graph{
+	z-index: 3;
+	position: absolute;
+	width: 150px;
+	right: -190px;
+	bottom: -190px;
+}
+.chart-icon{
+    z-index: 2;
+    position: absolute;
+    width: 50px;
+    bottom: -200px;
+    right: -50px;
+}
+.calender-icon{
+    position: absolute;
+    width: 50px;
+    top: -210px;
+    right: -200px;
+    border-radius: 6px;
+}
+.graph-icon{
+    position: absolute;
+    width: 50px;
+    top: -50px;
+    left: -250px;
+    border-radius: 6px; 
+}
