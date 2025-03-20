@@ -1,138 +1,165 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
-	font-family: 'Arial','Helvetica','sans-serif';
+	font-family: 'Arial', 'Helvetica', 'sans-serif';
 }
-body{
+.container{
+	margin-right: 50px;
+	margin-left: 50px;
 	background-color: #252b42;
+}
+body {
+	background-color: #000;
 	color: #fdfdfd;
 }
-main{
+
+main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 50px auto;
-	padding: 80px;
+	margin: auto;
+	padding: 10%;
 	width: 80%;
-	flex-wrap: wrap;
 }
-.text-content{
-	width: 25%;
+
+.text-content {
+	width: 37%;
 }
-.top-content{
-	font-size: 1.2em;
+
+.top-content {
+	font-size: 1.3em;
 	color: #21affe;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
-.heading{
-	font-size: 3.5em;
+
+.heading {
+	font-size: 4.3em;
 	margin-top: 20px;
 	line-height: 1.3;
 }
-.content{
+
+.content {
 	margin-top: 20px;
-	font-size: 1.2em;
-	line-height: 1.4;
+	font-size: 1.6em;
+	line-height: 1.5;
 }
-.selected{
-	margin-top:28px;
+
+.selected {
+	margin-top: 40px;
 	height: 45px;
 	margin-right: 8px;
-	width: 45%;
+	width: 43%;
 	font-size: 0.8em;
 	color: #eaf6fd;
 	background-color: #23a6f0;
 	border: none;
 	border-radius: 5px;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
-.deselected{
-	margin-top:28px;
+
+.deselected {
+	margin-top: 40px;
 	height: 45px;
-	width: 45%;
+	width: 43%;
 	font-size: 0.8em;
 	color: #22a0e8;
 	border: 0.5px solid #23a6f0;
 	border-radius: 5px;
 	background-color: #252b42;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
-.selected a{
+
+.selected a {
 	text-decoration: none;
 	color: #eaf6fd;
 }
-.deselected a{
+
+.deselected a {
 	text-decoration: none;
 	color: #22a0e8;
 }
-aside{
+
+aside {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 30%;
 	position: relative;
-    margin-top: 100px;
+	margin-top: 150px;
 }
-.container{
+
+.container {
 	position: relative;
 }
-.circle{
+
+.circle {
 	z-index: 1;
 	background-color: #aaead0;
 	border-radius: 50%;
-	height: 320px;
-	width: 320px;
+	height: 340px;
+	width: 340px;
 	position: absolute;
 	overflow: hidden;
 	transform: translate(-45%, -65%);
 }
-.boy{
+
+.boy {
 	z-index: 2;
 	position: absolute;
 	height: auto;
-	width: 500px;
+	width: 520px;
 	bottom: 0;
 	object-fit: cover;
 	transform: translate(-50%, 35%);
 }
-.trading-chart{
+
+.trading-chart {
 	z-index: 3;
 	position: absolute;
-    width: 200px;
-	left: -280px;
-	top: -280px; 
+	width: 200px;
+	left: -285px;
+	top: -285px;
 }
-.score{
+
+.score {
 	z-index: 3;
 	position: absolute;
 	width: 250px;
-	left: -280px;
-    bottom: -170px;
-    border-radius: 6px;
+	left: -285px;
+	bottom: -175px;
+	border-radius: 6px;
 }
-.rep-graph{
+
+.rep-graph {
 	z-index: 3;
 	position: absolute;
 	width: 150px;
-	right: -190px;
+	right: -195px;
 	bottom: -190px;
 }
-.chart-icon{
-    z-index: 2;
-    position: absolute;
-    width: 50px;
-    bottom: -200px;
-    right: -50px;
+
+.chart-icon {
+	z-index: 2;
+	position: absolute;
+	width: 50px;
+	bottom: -205px;
+	right: -55px;
 }
-.calender-icon{
-    position: absolute;
-    width: 50px;
-    top: -210px;
-    right: -200px;
-    border-radius: 6px;
+
+.calender-icon {
+	position: absolute;
+	width: 50px;
+	top: -215px;
+	right: -215px;
+	border-radius: 6px;
 }
-.graph-icon{
-    position: absolute;
-    width: 50px;
-    top: -50px;
-    left: -250px;
-    border-radius: 6px; 
+
+.graph-icon {
+	position: absolute;
+	width: 50px;
+	top: -55px;
+	left: -255px;
+	border-radius: 6px;
 }
